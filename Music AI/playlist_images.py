@@ -2,7 +2,7 @@ import openai
 import requests
 from moviepy.editor import *
 
-openai.api_key = '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'
+openai.api_key = 'your_openai_key_here'
 
 def transcribe_audio(audio_file):
     with open(audio_file, 'rb') as file:
