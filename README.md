@@ -157,6 +157,14 @@ This project aims to create a personal finance chatbot that helps you understand
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/FinancialChatbot/Screenshot%20(1).png?raw=true)
 Advanced features include integrating Retrieval-Augmented Generation (RAG) with LangChain and Flask, allowing the chatbot to provide more accurate and reliable financial advice through a lightweight web application. This comprehensive approach combines local execution, data privacy, and advanced AI techniques to offer insightful and actionable financial guidance.
 To run the project:
+* Download and install Ollama [here](https://ollama.ai/)
+* Open the terminal and run the following commands:
+    ```sh
+    pip install --upgrade pip
+    ```
+    ```sh
+    pip install -r requirements.txt
+    ```
 * Run the jupyternotbook in youe IDE: categorize_expenses.ipynb to categorize youe expenses
 * Run the jupyternotbook in youe IDE: dashboard.ipynb to generate the dashboard
 * Open the termianl and navigate to the folder
