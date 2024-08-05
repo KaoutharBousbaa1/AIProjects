@@ -115,4 +115,4 @@ This module creates a new page in a specified Notion database using the structur
     `https://www.notion.so/yourworkspace/Database-Name-6feda45bc86e424488b4e534f63ee923`
     The Database ID is the long string of characters after the last slash (/) in the URL. In the example above, the Database ID is:
     `6feda45bc86e424488b4e534f63ee923`.
-![Alt text]([https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(7).png?raw=true](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(8).png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(8).png?raw=true)
