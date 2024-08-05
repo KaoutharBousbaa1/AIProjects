@@ -119,8 +119,8 @@ This module creates a new page in a specified Notion database using the structur
 
 ## Streamlit Dashboard
 This part of the project will send an api requestopn to openai's model to geerate travel suggestion and then it saved as a csv file itinerary_events.csv, and then it generates a streamtit dashboard, and the pyhton script generates also a google map with located areas that the ai suggested earlier. To run the project:
-![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(6).png?raw=true)
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(10).png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(6).png?raw=true)
 * Open the termianl and navigate to the folder
 * run the following coommands:
     ```sh
