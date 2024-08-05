@@ -138,3 +138,17 @@ This part of the project will send an api requestopn to openai's model to geerat
     streamlit run streamlit_app.py
     ```
 Make sure to use a valid OpenAI key, and make sure to enable the Geocoding API in your Google Cloud Account, and to use a valid API key.
+
+## AI Music Generator
+The project involves creating music playlists using AI tools. It starts with generating multiple songs on the Udio platform. A script is written to connect the individual songs into a cohesive playlist, which is outputted in MP3 format. Text lyrics, potentially obtained through Whisper-1, are then transformed into prompts that encapsulate the imagery, mood, and vibes of the songs. These prompts are fed into DALL·E to generate corresponding images. Finally, the project combines the playlist with the generated images to create an MP4 file, resulting in a visually beautiful music experience.
+To run the project:
+* Generate AI music via Udio platform. You can sign up [here](https://www.udio.com/)
+* Open the termianl and navigate to the folder
+* run the following coommands:
+    ```sh
+    playlist.py
+    ```
+    ```sh
+    python playlist_images.py
+    ```
+Make sure to use a valid OpenAI key.
