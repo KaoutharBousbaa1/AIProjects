@@ -28,7 +28,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 texts = text_splitter.create_documents([text])
 
 # Initialize OpenAI embeddings
-embeddings_model = OpenAIEmbeddings(openai_api_key="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")
+embeddings_model = OpenAIEmbeddings(openai_api_key="your_openai_key")
 
 # Create embeddings for the text chunks
 chunk_texts = [doc.page_content for doc in texts]  # Extract text from the Document objects
@@ -49,7 +49,7 @@ def retrieve(query_text, k=5):
     return distances, indices
 
 # Initialize HuggingFace LLM
-huggingface_api_token = "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"  # Replace with your actual HuggingFace API token
+huggingface_api_token = "your_huggingface_openai_token"  # Replace with your actual HuggingFace API token
 llm = HuggingFaceEndpoint(
     repo_id="HuggingFaceH4/zephyr-7b-beta",
     task="text-generation",
