@@ -62,7 +62,7 @@ locations_json = locations.to_json(orient='records')
 map_html = f"""
 <html>
 <head>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChJQSPakT4mt9ipri9X905f-4YONfcSG8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=your_googleapi_key_here"></script>
     <script>
         var locations = {locations_json};
         function initMap() {{
