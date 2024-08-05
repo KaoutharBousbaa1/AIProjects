@@ -116,3 +116,24 @@ This module creates a new page in a specified Notion database using the structur
     The Database ID is the long string of characters after the last slash (/) in the URL. In the example above, the Database ID is:
     `6feda45bc86e424488b4e534f63ee923`.
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(8).png?raw=true)
+
+## Streamlit Dashboard
+This part of the project will send an api requestopn to openai's model to geerate travel suggestion and then it saved as a csv file itinerary_events.csv, and then it generates a streamtit dashboard, and the pyhton script generates also a google map with located areas that the ai suggested earlier. To run the project:
+* Open the termianl and navigate to the folder
+* run the following coommands:
+    ```sh
+    pip install --upgrade pip
+    ```
+    ```sh
+    pip install -r requirements.txt
+    ```
+* Open steamlit.ipynb and run it in your IDE. 
+* Run in the terlinal the following scripts: 
+    ```sh
+    python generate_coordinates.py
+    ```
+    ```sh
+    streamlit run streamlit_app.py
+    ```
+Make sure to use a valid OpenAI key, and make sure to enable the Geocoding API in your Google Cloud Account, and to use a valid API key.
+
