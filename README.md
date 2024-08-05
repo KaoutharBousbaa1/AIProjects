@@ -167,8 +167,7 @@ To run the project:
     ```
 * Run the jupyternotbook in youe IDE: categorize_expenses.ipynb to categorize youe expenses
 * Run the jupyternotbook in youe IDE: dashboard.ipynb to generate the dashboard
-* Open the termianl and navigate to the folder
-* run the following coommand:
+* Run the application by using the command:
     ```sh
     python chatbot.py
     ```
