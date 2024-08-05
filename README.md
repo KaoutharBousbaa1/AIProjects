@@ -162,6 +162,6 @@ To run the project:
 * Open the termianl and navigate to the folder
 * run the following coommand:
     ```sh
-    pchatbot.py
+    python chatbot.py
     ```
 Make sure to use a valid OpenAI key and a valid Huggingface API key.
