@@ -62,4 +62,10 @@ Bubble is a full-stack, no-code app buidler, you can build scalable applications
     Go now to the Workflow section and add another action -> Element Actions -> Set State and replace the fiels as follow (Replace storepdfs with your actual page name)
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(22).png?raw=true)
 
-you can be creative and add an input section to ask questions about the workbooks and get answer as well for the workbooks.
+You can be creative and add an input section to ask questions about the workbooks and get answer as well for the workbooks.
+
+# Travel AI Application
+This project involves building an AI travel agent that helps you plan your travels based on your preferences.
+
+## Make: Automation Software
+Make is a no-code platform that allows you to visualize, create, build, and automate workflows.
