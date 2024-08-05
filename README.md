@@ -152,3 +152,16 @@ To run the project:
     python playlist_images.py
     ```
 Make sure to use a valid OpenAI key.
+## Personal Finance Chatbot:
+This project aims to create a personal finance chatbot that helps you understand you spending habits and achieve financial goals. The chatbot, designed with the positive and perceptive personality of Might Guy from Naruto, uses GPT4All for prompt engineering and operates locally to ensure privacy. Users can interact with the chatbot using their CSV financial statements to analyze current spending habits. The project involves enhancing the chatbot's capabilities with Ollama in a Jupyter Notebook to categorize transactions and generate visualizations using a Plotly dashboard. 
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/FinancialChatbot/Screenshot%20(1).png?raw=true)
+Advanced features include integrating Retrieval-Augmented Generation (RAG) with LangChain and Flask, allowing the chatbot to provide more accurate and reliable financial advice through a lightweight web application. This comprehensive approach combines local execution, data privacy, and advanced AI techniques to offer insightful and actionable financial guidance.
+To run the project:
+* Run the jupyternotbook in youe IDE: categorize_expenses.ipynb to categorize youe expenses
+* Run the jupyternotbook in youe IDE: dashboard.ipynb to generate the dashboard
+* Open the termianl and navigate to the folder
+* run the following coommand:
+    ```sh
+    pchatbot.py
+    ```
+Make sure to use a valid OpenAI key and a valid Huggingface API key.
