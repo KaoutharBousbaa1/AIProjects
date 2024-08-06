@@ -179,7 +179,11 @@ To run the project:
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(10).png?raw=true)
 
-![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(6).png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(11).png?raw=true)
+
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(12).png?raw=true)
+
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(9).png?raw=true)
 
 * Open the terminal and navigate to the project folder.
 * Run the following commands:
