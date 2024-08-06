@@ -1,4 +1,5 @@
 Flask
+ollama
 langchain
 langchain-commmunity
 huggingface_hub
