@@ -173,7 +173,7 @@ This module creates a new page in a specified Notion database using the structur
 
 ## Streamlit Dashboard
 
-This part of the project will send an API request to OpenAI's model to generate travel suggestions, which will then be saved as a CSV file named itinerary_events.csv. Next, it generates a Streamlit dashboard, and the Python script also creates a Google Map with the locations suggested by the AI.
+This part of the project sends an API request to OpenAI's model to generate travel suggestions, which are then saved as a CSV file named `itinerary_events.csv`. Next, it generates a Streamlit dashboard, and the Python script also creates a Google Map with the locations suggested by the AI.
 
 To run the project:
 
@@ -181,48 +181,54 @@ To run the project:
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(6).png?raw=true)
 
-* Open the termianl and navigate to the folder
-* run the following coommands:
+* Open the terminal and navigate to the project folder.
+* Run the following commands:
     ```sh
     pip install --upgrade pip
     ```
     ```sh
     pip install -r requirements.txt
     ```
-* Open steamlit.ipynb and run it in your IDE. 
-* Run in the terlinal the following scripts: 
+* Open `streamlit.ipynb` and run it in your IDE.
+* Run the following scripts in the terminal:
     ```sh
     python generate_coordinates.py
     ```
     ```sh
     streamlit run streamlit_app.py
     ```
-Make sure to use a valid OpenAI key, and make sure to enable the Geocoding API in your Google Cloud Account, and to use a valid API key.
+
+Make sure to use a valid OpenAI key and enable the Geocoding API in your Google Cloud Account, and ensure you use a valid API key.
 
 # AI Music Generator
 
 The project involves creating music playlists using AI tools. It starts with generating multiple songs on the Udio platform. A script is written to connect the individual songs into a cohesive playlist, which is outputted in MP3 format. Text lyrics, potentially obtained through Whisper-1, are then transformed into prompts that encapsulate the imagery, mood, and vibes of the songs. These prompts are fed into DALL·E to generate corresponding images. Finally, the project combines the playlist with the generated images to create an MP4 file, resulting in a visually beautiful music experience.
+
 To run the project:
-* Generate AI music via Udio platform. You can sign up [here](https://www.udio.com/)
-* Open the termianl and navigate to the folder
-* run the following coommands:
+
+* Generate AI music via the Udio platform. You can sign up [here](https://www.udio.com/).
+* Open the terminal and navigate to the project folder.
+* Run the following commands:
     ```sh
-    playlist.py
+    python playlist.py
     ```
     ```sh
     python playlist_images.py
     ```
+
 Make sure to use a valid OpenAI key.
 
-# Personal Finance Chatbot:
+# Personal Finance Chatbot
 
-This project aims to create a personal finance chatbot that helps you understand you spending habits and achieve financial goals. The chatbot, designed with the positive and perceptive personality of Might Guy from Naruto, uses GPT4All for prompt engineering and operates locally to ensure privacy. Users can interact with the chatbot using their CSV financial statements to analyze current spending habits. The project involves enhancing the chatbot's capabilities with Ollama in a Jupyter Notebook to categorize transactions and generate visualizations using a Plotly dashboard. 
+This project aims to create a personal finance chatbot that helps you understand your spending habits and achieve financial goals. The chatbot, designed with the positive and perceptive personality of Might Guy from Naruto, uses GPT4All for prompt engineering and operates locally to ensure privacy. Users can interact with the chatbot using their CSV financial statements to analyze current spending habits. The project involves enhancing the chatbot's capabilities with Ollama in a Jupyter Notebook to categorize transactions and generate visualizations using a Plotly dashboard.
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/FinancialChatbot/Screenshot%20(1).png?raw=true)
 
 Advanced features include integrating Retrieval-Augmented Generation (RAG) with LangChain and Flask, allowing the chatbot to provide more accurate and reliable financial advice through a lightweight web application. This comprehensive approach combines local execution, data privacy, and advanced AI techniques to offer insightful and actionable financial guidance.
+
 To run the project:
-* Download and install Ollama [here](https://ollama.ai/)
+
+* Download and install Ollama [here](https://ollama.ai/).
 * Open the terminal and run the following commands:
     ```sh
     pip install --upgrade pip
@@ -230,10 +236,11 @@ To run the project:
     ```sh
     pip install -r requirements.txt
     ```
-* Run the jupyternotbook in youe IDE: categorize_expenses.ipynb to categorize youe expenses
-* Run the jupyternotbook in youe IDE: dashboard.ipynb to generate the dashboard
+* Run the Jupyter notebook in your IDE: `categorize_expenses.ipynb` to categorize your expenses.
+* Run the Jupyter notebook in your IDE: `dashboard.ipynb` to generate the dashboard.
 * Run the application by using the command:
     ```sh
     python chatbot.py
     ```
+
 Make sure to use a valid OpenAI key and a valid Huggingface API key.
