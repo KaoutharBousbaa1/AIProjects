@@ -9,20 +9,18 @@ Bubble is a full-stack, no-code app builder. You can build scalable applications
    
 2- Connect it to OpenAI by filling in the headers as follows:
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(3).png?raw=true)
-   
     Make sure to replace `Bearer "YOUR_OPENAI_KEY_KEY"` with your actual OpenAI key. In this particular project, we used one API call, and that is to the Chat Completions Model. It is a POST request, and we are making a POST request to the following URL:         
     `https://api.openai.com/v1/chat/completions`. You can change the `max_tokens` variable to make the application more scalable.
-    
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(4).png?raw=true)
-    
     Then click on Reinitialize Call and make sure that the messade_content's type is text.
     
 3- Create a new data type:
     To store the files that are related to each user, you need to create a new data type.
-    Navigate through the Data Types and create a new data type (Aka PDFs).
+    Navigate through the Data Types and create a new data type called PDFs.
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(11).png?raw=true)
-    In the PDFs data type, create a new field `PDF` of type `file` and create another field `content` of type `text`. Create one more for user name `Full name` of type `text`
+    In the PDFs data type, create the following fields: `PDF` of type `file`, `content` of type `text`, `Full name` of type `text`
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(12).png?raw=true)
+    
 4- Create the Sign-up page:
     Because we are using the users data, we need to create the sign-up page to get data from users.
     Create a new page and click on componenets, then choose the sign-up page and drag it into the page.
@@ -37,13 +35,15 @@ Bubble is a full-stack, no-code app builder. You can build scalable applications
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(15).png?raw=true)
     The next step of the workflow is to naviagte the user to another page, create a page new page first in the Design section and then add another action to the workflow -> Navigation -> Go to another Page
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(16).png?raw=true)
+    
 5- Upload PDFs page:
     Go to the design section of the new page and drag to the page the File Uploader element (You can be creative as you want here too ;) )
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(10).png?raw=true)
     Then go to the Workflow section -> Add an event -> Elements -> An input's value is changed
     Add an action -> Data -> Create a new thing -> Set the Type variable to PDFs and set another field as PDF = This FileUploader's value
     Add another action: Data -> Make changes to things and fill the fields as follow:
-    ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(18).png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(18).png?raw=true
+    
 6- Convert PDF to Text:
     Install Convert PDF to Text plugin
     Got to workflow and add another action -> Plugins -> Convert PDF to Text, the pdf-url is going to be ThisFileUploader's value
