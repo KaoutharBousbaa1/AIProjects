@@ -10,7 +10,7 @@ itinerary_df = pd.read_csv("itinerary_events_with_coordinates.csv")
 st.title('Travel Itinerary Dashboard')
 
 # Display the itinerary events
-st.header('Itinerary Events')
+st.header('Itinerary Events 🐢')
 st.dataframe(itinerary_df)
 
 # Sidebar filters
@@ -24,15 +24,11 @@ selected_category = st.sidebar.multiselect(
 # Filter dataframe based on selected categories
 filtered_df = itinerary_df[itinerary_df['category'].isin(selected_category)]
 
-# Display filtered events
-st.subheader('Filtered Itinerary Events')
-st.dataframe(filtered_df)
-
 # Group events by category
 grouped = filtered_df.groupby('category')
 
 # Display grouped categories
-st.header('Grouped Categories')
+st.header('Grouped Categories ⛰️')
 for category, events in grouped:
     st.subheader(category)
     st.write(events)
@@ -50,7 +46,7 @@ ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 st.pyplot(fig)
 
 # Display a Google Map with markers
-st.header('View on Map')
+st.header('View on Map 📍')
 
 # Prepare data for JavaScript
 locations = filtered_df[['latitude', 'longitude', 'location']].dropna()
