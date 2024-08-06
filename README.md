@@ -62,8 +62,8 @@ Go to the design section of your new page, and drag the File Uploader element on
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(10).png?raw=true)
 
 Navigate to the Workflow section, click on Add an event, select Elements -> an input’s value is changed.
-Add an action -> Data -> Create a new thing -> Set the Type variable to PDFs and set another field as PDF = This FileUploader's value
-Add another action: Data -> Make changes to things and fill the fields as follow:
+Add an action -> Data -> Create a new thing, set the Type variable to PDFs and then set another field as PDF = This FileUploader’s value.
+Add another action -> Data -> Make changes to things and fill in the fields as needed:
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(18).png?raw=true)
     
