@@ -175,8 +175,6 @@ This module creates a new page in a specified Notion database using the structur
 
 This part of the project sends an API request to OpenAI's model to generate travel suggestions, which are then saved as a CSV file named `itinerary_events.csv`. Next, it generates a Streamlit dashboard, and the Python script also creates a Google Map with the locations suggested by the AI.
 
-To run the project:
-
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(11).png?raw=true)
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(10).png?raw=true)
@@ -184,6 +182,8 @@ To run the project:
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(12).png?raw=true)
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(9).png?raw=true)
+
+To run the project:
 
 * Open the terminal and navigate to the project folder.
 * Run the following commands:
