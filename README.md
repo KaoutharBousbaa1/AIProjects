@@ -69,8 +69,8 @@ Add another action -> Data -> Make changes to things and fill in the fields as n
     
 #### 6- Convert PDF to Text:
 
-Install Convert PDF to Text plugin
-Got to workflow and add another action -> Plugins -> Convert PDF to Text, the pdf-url is going to be ThisFileUploader's value
+Install the Convert PDF to Text Plugin:
+Go to your workflow and add a new action -> Select Plugins -> Convert PDF to Text -> Set the pdf-url to ThisFileUploader's value.
 Add another action -> Data -> Make changes to a thing and you fill with the following
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(19).png?raw=true)
