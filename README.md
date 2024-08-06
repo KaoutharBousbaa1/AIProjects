@@ -3,15 +3,20 @@
 Bubble is a full-stack, no-code app builder. You can build scalable applications with this AI-powered no-code development platform. You can also connect your app with ChatGPT or Claude. If you love reading like I do, you may come across countless workbooks. To make sure you ace them, you can stay organized and have them all in one place. Bubble can help you with that by gathering the workbooks listed in your favorite book in one place. This application is powered by the OpenAI API, and everything is done via the UI. Here are the steps to make one for you:
 
 ### Step 1: Set the API Connector
+
 1. Install the API Connector
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(2).png?raw=true)
+   
 2- Connect it to OpenAI by filling in the headers as follows:
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(3).png?raw=true)
-    Make sure to replace `Bearer "YOUR_OPENAI_KEY_KEY"` with you your actual OpenAI key.
-    In this particular project, we used one API call, and that is to the Chat Completions Model. It is a POST request and we are posting the following URL: `https://api.openai.com/v1/chat/completions`
-    You can change the `max_tokens` variable to make the application more scalable.
+   
+    Make sure to replace `Bearer "YOUR_OPENAI_KEY_KEY"` with your actual OpenAI key. In this particular project, we used one API call, and that is to the Chat Completions Model. It is a POST request, and we are making a POST request to the following URL:         
+    `https://api.openai.com/v1/chat/completions`. You can change the `max_tokens` variable to make the application more scalable.
+    
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(4).png?raw=true)
+    
     Then click on Reinitialize Call and make sure that the messade_content's type is text.
+    
 3- Create a new data type:
     To store the files that are related to each user, you need to create a new data type.
     Navigate through the Data Types and create a new data type (Aka PDFs).
