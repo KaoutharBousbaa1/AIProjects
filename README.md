@@ -56,48 +56,65 @@ The next step of the workflow is to naviagte the user to another page, create a 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(16).png?raw=true)
     
 5- Upload PDFs page:
+
 Go to the design section of the new page and drag to the page the File Uploader element (You can be creative as you want here too ;) )
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(10).png?raw=true)
+
 Then go to the Workflow section -> Add an event -> Elements -> An input's value is changed
 Add an action -> Data -> Create a new thing -> Set the Type variable to PDFs and set another field as PDF = This FileUploader's value
 Add another action: Data -> Make changes to things and fill the fields as follow:
-![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(18).png?raw=true
+
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(18).png?raw=true)
     
 6- Convert PDF to Text:
+
 Install Convert PDF to Text plugin
 Got to workflow and add another action -> Plugins -> Convert PDF to Text, the pdf-url is going to be ThisFileUploader's value
 Add another action -> Data -> Make changes to a thing and you fill with the following
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(19).png?raw=true)
+
 This will add the PDF text to the content field of the PDF.
 When it comes to sending data to OpenAI API, you need to consider the number of tokens as it comes with a cost, to reduce the cost, you can summarize the PDF text
 Go ro Data -> PDFs -> Data Types -> Create a New field call it summary and the type is text
 Add another action -> Plugins -> OpenAI - GPT ( make sure that OpenAI and ChatGPT plugin is installed) and fill it as follow:
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(20).png?raw=true)
+
 7- ChatGPT plugin
+
 Now you can intract with the PDF content, ask questions...
 But first let's clean up the UI, so that the user can upload as many PDFs. To do so, create another action -> Elements actions -> Reset inputs
 Another thing we want to add, is to show a message when the suer has successfully uploaded a PDF. To do so, go to Design section, drag the Browser plugin into the page (Make sure it is already installed) and go back to the Workflows section and add another section -> Element Actions -> Show alert Pop up in Browser and write the message you want.
     
 Now to feed all this knowledge base to openai, you add another action -> Plugins -> OpenAI - GPT (make sure that OpenAI and ChatGPT plugin is installed) and fill the fields as follow:
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(21).png?raw=true)
 
 8- Display the result
+
 Now, to display the result in the page, to do so go to Design -> Add a Text element to the page -> Click Outside the page -> Click the i icon -> Create a new custom state, call it "result", and se type to text
 Click in the Text element -> and set in the appearance space: page_name's result 
 Go now to the Workflow section and add another action -> Element Actions -> Set State and replace the fiels as follow (Replace storepdfs with your actual page name)
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(22).png?raw=true)
 
 You can be creative and add an input section to ask questions about the workbooks and get answer as well for the workbooks.
 
 # Travel AI Application
+
 This project involves building an AI travel agent that helps you plan your travels based on your preferences.
 
 ## Make: Automation Software
+
 Make is a no-code platform that allows you to visualize, create, build, and automate workflows.
 This Make scenario is designed to generate a custom travel plan based on a user's interests and then store the generated plan in a Notion database. It connects to OpenAI's GPT-3 and Notion to achieve this. The Basic Repeater ensures the actions are repeated a specified number of times, the OpenAI GPT-3 module generates the travel plan, and the Notion module stores the plan in a database.
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(7).png?raw=true)
 
 #### Basic Repeater (Module ID: 8)
+
 This module repeats a set of actions a specified number of times. It will repeat the subsequent actions three times, starting from 1 and incrementing by 1 each time.
 * Configuration:
     - Start: 1
@@ -105,6 +122,7 @@ This module repeats a set of actions a specified number of times. It will repeat
     - Step: 1
 
 #### Transform Text to Structured Data (OpenAI GPT-3) (Module ID: 1)
+
 This module uses OpenAI's GPT-3 to transform a text prompt into structured data. It generates a custom travel plan based on the user's interests in specific anime and outputs structured data.
 * Configuration:
     - Model: gpt-4o
@@ -123,6 +141,7 @@ This module uses OpenAI's GPT-3 to transform a text prompt into structured data.
     Make sure to use a valid OpenAI Key.
   
 #### Create a Page (Notion) (Module ID: 2)
+
 This module creates a new page in a specified Notion database using the structured data generated by the previous module. It creates a new page in the specified Notion database with the travel plan details.
 * Configuration:
     - Database ID: "your_data_base_id"
@@ -140,12 +159,17 @@ This module creates a new page in a specified Notion database using the structur
     `https://www.notion.so/yourworkspace/Database-Name-6feda45bc86e424488b4e534f63ee923`
     The Database ID is the long string of characters after the last slash (/) in the URL. In the example above, the Database ID is:
     `6feda45bc86e424488b4e534f63ee923`.
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(8).png?raw=true)
 
 ## Streamlit Dashboard
+
 This part of the project will send an api requestopn to openai's model to geerate travel suggestion and then it saved as a csv file itinerary_events.csv, and then it generates a streamtit dashboard, and the pyhton script generates also a google map with located areas that the ai suggested earlier. To run the project:
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(10).png?raw=true)
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/TravelBot/Screenshot%20(6).png?raw=true)
+
 * Open the termianl and navigate to the folder
 * run the following coommands:
     ```sh
@@ -165,6 +189,7 @@ This part of the project will send an api requestopn to openai's model to geerat
 Make sure to use a valid OpenAI key, and make sure to enable the Geocoding API in your Google Cloud Account, and to use a valid API key.
 
 # AI Music Generator
+
 The project involves creating music playlists using AI tools. It starts with generating multiple songs on the Udio platform. A script is written to connect the individual songs into a cohesive playlist, which is outputted in MP3 format. Text lyrics, potentially obtained through Whisper-1, are then transformed into prompts that encapsulate the imagery, mood, and vibes of the songs. These prompts are fed into DALL·E to generate corresponding images. Finally, the project combines the playlist with the generated images to create an MP4 file, resulting in a visually beautiful music experience.
 To run the project:
 * Generate AI music via Udio platform. You can sign up [here](https://www.udio.com/)
@@ -179,7 +204,9 @@ To run the project:
 Make sure to use a valid OpenAI key.
 # Personal Finance Chatbot:
 This project aims to create a personal finance chatbot that helps you understand you spending habits and achieve financial goals. The chatbot, designed with the positive and perceptive personality of Might Guy from Naruto, uses GPT4All for prompt engineering and operates locally to ensure privacy. Users can interact with the chatbot using their CSV financial statements to analyze current spending habits. The project involves enhancing the chatbot's capabilities with Ollama in a Jupyter Notebook to categorize transactions and generate visualizations using a Plotly dashboard. 
+
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/FinancialChatbot/Screenshot%20(1).png?raw=true)
+
 Advanced features include integrating Retrieval-Augmented Generation (RAG) with LangChain and Flask, allowing the chatbot to provide more accurate and reliable financial advice through a lightweight web application. This comprehensive approach combines local execution, data privacy, and advanced AI techniques to offer insightful and actionable financial guidance.
 To run the project:
 * Download and install Ollama [here](https://ollama.ai/)
