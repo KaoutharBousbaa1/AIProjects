@@ -33,35 +33,35 @@ In the PDFs data type, create the following fields: `PDF` of type `file`, `conte
 #### 4- Create the Sign-up page:
 
 Because we are using the users data, we need to create the sign-up page to get data from users.
-Create a new page and click on componenets, then choose the sign-up page and drag it into the page.
+Create a New Page, thne click on Components, then choose the Sign-up Page and drag it into the new page.
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(13).png?raw=true)
 
-You can be creative as you want for the UI.
+Feel free to be creative with the UI design.
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(1).png?raw=true)
 
 Click on `Workflow` tab, then `Add a new event` then choose the event "When page is loaded"
-Click on the event to add a new action, choose `ElementActions` and then `Toggle` and choose as element `Popup Sign Up/Log in` so the page is loaded for the vistors.
-Click in the Sign up bottom and click Add Workflow, then click on Add an action -> Account -> Sign the user Up 
+Click on the event to add a new action, choose `ElementActions` and then `Toggle` and select `Popup Sign Up/Log in` as the element to be toggled when the page loads.
+Click on the Sign up bntton and click Add Workflow, then click on Add an action -> Account -> Sign the user Up 
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(14).png?raw=true)
 
-Then fill fields with the following: 
+Fill in the fields as shown below:
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(15).png?raw=true)
 
-The next step of the workflow is to naviagte the user to another page, create a page new page first in the Design section and then add another action to the workflow -> Navigation -> Go to another Page
+The next step of the workflow is to naviagte the user to another page, create a new page in the Design section and then add another action to the workflow, by taping Workflows -> Navigation -> Go to another Page
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(16).png?raw=true)
     
 #### 5- Upload PDFs page:
 
-Go to the design section of the new page and drag to the page the File Uploader element (You can be creative as you want here too ;) )
+Go to the design section of your new page, and drag the File Uploader element onto the page. You can place it wherever you think it looks best.
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(10).png?raw=true)
 
-Then go to the Workflow section -> Add an event -> Elements -> An input's value is changed
+Navigate to the Workflow section, click on Add an event, select Elements -> an input’s value is changed.
 Add an action -> Data -> Create a new thing -> Set the Type variable to PDFs and set another field as PDF = This FileUploader's value
 Add another action: Data -> Make changes to things and fill the fields as follow:
 
