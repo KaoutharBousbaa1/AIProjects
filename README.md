@@ -5,7 +5,7 @@ Bubble is a full-stack, no-code app builder. You can build scalable applications
 ### Step 1: Set the API Connector
 1. Install the API Connector
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(2).png?raw=true)
-2- Connect it to OpenAI by filling headers by the following
+2- Connect it to OpenAI by filling in the headers as follows:
     ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(3).png?raw=true)
     Make sure to replace `Bearer "YOUR_OPENAI_KEY_KEY"` with you your actual OpenAI key.
     In this particular project, we used one API call, and that is to the Chat Completions Model. It is a POST request and we are posting the following URL: `https://api.openai.com/v1/chat/completions`
