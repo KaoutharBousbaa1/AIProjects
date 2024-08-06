@@ -233,7 +233,10 @@ Advanced features include integrating Retrieval-Augmented Generation (RAG) with 
 To run the project:
 
 * Download and install Ollama [here](https://ollama.ai/).
-* Open the terminal and run the following commands:
+* Open the terminal, navigate to the project and run the following commands:
+    ```sh
+    ollama pull ollama2
+    ```
     ```sh
     pip install --upgrade pip
     ```
