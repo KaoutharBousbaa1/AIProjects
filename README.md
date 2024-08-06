@@ -1,6 +1,6 @@
 # Workbooks AI Application
 
-Bubble is a full-stack, no-code app builder. You can build scalable applications with this AI-powered no-code development platform. You can also connect your app with ChatGPT or Claude.If you love reading like I do, you may come across countless workbooks. To make sure you ace them, you can stay organized and have them all in one place. Bubble can help you with that by gathering the workbooks listed in your favorite book in one place. This application is powered by the OpenAI API, and everything is done via the UI. Here are the steps to make one for you:
+Bubble is a full-stack, no-code app builder. You can build scalable applications with this AI-powered no-code development platform. You can also connect your app with ChatGPT or Claude. If you love reading like I do, you may come across countless workbooks. To make sure you ace them, you can stay organized and have them all in one place. Bubble can help you with that by gathering the workbooks listed in your favorite book in one place. This application is powered by the OpenAI API, and everything is done via the UI. Here are the steps to make one for you:
 
 ### Step 1: Set the API Connector
 1. Install the API Connector
