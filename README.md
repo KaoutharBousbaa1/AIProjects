@@ -75,32 +75,41 @@ Add another action -> Data -> Make changes to a thing and you fill with the foll
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(19).png?raw=true)
 
-This will add the PDF text to the content field of the PDF.
-When it comes to sending data to OpenAI API, you need to consider the number of tokens as it comes with a cost, to reduce the cost, you can summarize the PDF text
-Go ro Data -> PDFs -> Data Types -> Create a New field call it summary and the type is text
-Add another action -> Plugins -> OpenAI - GPT ( make sure that OpenAI and ChatGPT plugin is installed) and fill it as follow:
+This action will add the PDF text to the content field of the PDF.
+When sending data to the OpenAI API, consider the number of tokens to reduce cost, you can summarize the PDF text:
+Go to Data -> PDFs -> Data Types -> Create a new field called summary and set the type to text.
+Add an Action to Summarize the Text Using OpenAI -> Select Plugins -> Choose OpenAI - GPT (ensure the OpenAI and ChatGPT plugin is installed) and Fill in the fields as shown in the image below:
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(20).png?raw=true)
 
 #### 7- ChatGPT plugin
 
-Now you can intract with the PDF content, ask questions...
-But first let's clean up the UI, so that the user can upload as many PDFs. To do so, create another action -> Elements actions -> Reset inputs
-Another thing we want to add, is to show a message when the suer has successfully uploaded a PDF. To do so, go to Design section, drag the Browser plugin into the page (Make sure it is already installed) and go back to the Workflows section and add another section -> Element Actions -> Show alert Pop up in Browser and write the message you want.
+Now you can interact with the PDF content and ask questions. But first, let's clean up the UI so that the user can upload multiple PDFs.
+First, reset inputs by create another action, then select Elements actions -> Choose Reset inputs.
+
+We can also show a Message When a PDF is Successfully Uploaded:
+Go to the Design section -> Drag the Browser plugin into the page (make sure it is already installed) -> Go back to the Workflows section -> Add another action -> Select Element Actions -> Choose Show alert Pop up in Browser -> Write the message you want to display.
     
-Now to feed all this knowledge base to openai, you add another action -> Plugins -> OpenAI - GPT (make sure that OpenAI and ChatGPT plugin is installed) and fill the fields as follow:
+Now, feed the Knowledge Base to OpenAI:
+Add another action -> Select Plugins -> Choose OpenAI - GPT (make sure the OpenAI and ChatGPT plugin is installed) -> Fill in the fields as follows:
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(21).png?raw=true)
 
 #### 8- Display the result
 
-Now, to display the result in the page, to do so go to Design -> Add a Text element to the page -> Click Outside the page -> Click the i icon -> Create a new custom state, call it "result", and se type to text
-Click in the Text element -> and set in the appearance space: page_name's result 
-Go now to the Workflow section and add another action -> Element Actions -> Set State and replace the fiels as follow (Replace storepdfs with your actual page name)
+To display the result in the page:
+First, go to the Design section -> Add a Text element to the page -> Click outside the page -> Click the "i" icon -> Create a new custom state, call it "result", and set the type to text.
+
+Next, we need to set the Text Element:
+Click on the Text element -> In the appearance section, set it to page_name's result.
+
+Finally, set the State in the Workflow Section:
+
+Go to the Workflow section -> Add another action -> Select Element Actions -> Choose Set State and fill in the fields as shown below (replace "storepdfs" with your actual page name):
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(22).png?raw=true)
 
-You can be creative and add an input section to ask questions about the workbooks and get answer as well for the workbooks.
+You can be creative and add an input section to ask questions about the workbooks and get answers as well.
 
 # Travel AI Application
 
