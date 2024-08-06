@@ -8,7 +8,7 @@ Bubble is a full-stack, no-code app builder. You can build scalable applications
    
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(2).png?raw=true)
    
-2- Connect it to OpenAI by filling in the headers as follows:
+#### 2- Connect it to OpenAI by filling in the headers as follows:
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(3).png?raw=true)
     
@@ -19,7 +19,7 @@ Make sure to replace `Bearer "YOUR_OPENAI_KEY_KEY"` with your actual OpenAI key.
     
 Then click on Reinitialize Call and make sure that the messade_content's type is text.
     
-3- Create a new data type:
+#### 3- Create a new data type:
 
 To store the files that are related to each user, you need to create a new data type.
 Navigate through the Data Types and create a new data type called PDFs.
@@ -30,7 +30,7 @@ In the PDFs data type, create the following fields: `PDF` of type `file`, `conte
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(12).png?raw=true)
     
-4- Create the Sign-up page:
+#### 4- Create the Sign-up page:
 
 Because we are using the users data, we need to create the sign-up page to get data from users.
 Create a new page and click on componenets, then choose the sign-up page and drag it into the page.
@@ -55,7 +55,7 @@ The next step of the workflow is to naviagte the user to another page, create a 
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(16).png?raw=true)
     
-5- Upload PDFs page:
+#### 5- Upload PDFs page:
 
 Go to the design section of the new page and drag to the page the File Uploader element (You can be creative as you want here too ;) )
 
@@ -67,7 +67,7 @@ Add another action: Data -> Make changes to things and fill the fields as follow
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(18).png?raw=true)
     
-6- Convert PDF to Text:
+#### 6- Convert PDF to Text:
 
 Install Convert PDF to Text plugin
 Got to workflow and add another action -> Plugins -> Convert PDF to Text, the pdf-url is going to be ThisFileUploader's value
@@ -82,7 +82,7 @@ Add another action -> Plugins -> OpenAI - GPT ( make sure that OpenAI and ChatGP
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(20).png?raw=true)
 
-7- ChatGPT plugin
+#### 7- ChatGPT plugin
 
 Now you can intract with the PDF content, ask questions...
 But first let's clean up the UI, so that the user can upload as many PDFs. To do so, create another action -> Elements actions -> Reset inputs
@@ -92,7 +92,7 @@ Now to feed all this knowledge base to openai, you add another action -> Plugins
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(21).png?raw=true)
 
-8- Display the result
+#### 8- Display the result
 
 Now, to display the result in the page, to do so go to Design -> Add a Text element to the page -> Click Outside the page -> Click the i icon -> Create a new custom state, call it "result", and se type to text
 Click in the Text element -> and set in the appearance space: page_name's result 
@@ -202,7 +202,9 @@ To run the project:
     python playlist_images.py
     ```
 Make sure to use a valid OpenAI key.
+
 # Personal Finance Chatbot:
+
 This project aims to create a personal finance chatbot that helps you understand you spending habits and achieve financial goals. The chatbot, designed with the positive and perceptive personality of Might Guy from Naruto, uses GPT4All for prompt engineering and operates locally to ensure privacy. Users can interact with the chatbot using their CSV financial statements to analyze current spending habits. The project involves enhancing the chatbot's capabilities with Ollama in a Jupyter Notebook to categorize transactions and generate visualizations using a Plotly dashboard. 
 
 ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/FinancialChatbot/Screenshot%20(1).png?raw=true)
