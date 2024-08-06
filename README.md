@@ -20,28 +20,29 @@ Make sure to replace `Bearer "YOUR_OPENAI_KEY_KEY"` with your actual OpenAI key.
 Then click on Reinitialize Call and make sure that the messade_content's type is text.
     
 3- Create a new data type:
+
 To store the files that are related to each user, you need to create a new data type.
 Navigate through the Data Types and create a new data type called PDFs.
 
-    ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(11).png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(11).png?raw=true)
     
 In the PDFs data type, create the following fields: `PDF` of type `file`, `content` of type `text`, `Full name` of type `text`
-    ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(12).png?raw=true)
+   ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(12).png?raw=true)
     
 4- Create the Sign-up page:
-    Because we are using the users data, we need to create the sign-up page to get data from users.
-    Create a new page and click on componenets, then choose the sign-up page and drag it into the page.
-    ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(13).png?raw=true)
-    You can be creative as you want for the UI.
-    ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(1).png?raw=true)
-    Click on `Workflow` tab, then `Add a new event` then choose the event "When page is loaded"
-    Click on the event to add a new action, choose `ElementActions` and then `Toggle` and choose as element `Popup Sign Up/Log in` so the page is loaded for the vistors.
-    Click in the Sign up bottom and click Add Workflow, then click on Add an action -> Account -> Sign the user Up 
-    ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(14).png?raw=true)
-    Then fill fields with the following: 
-    ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(15).png?raw=true)
-    The next step of the workflow is to naviagte the user to another page, create a page new page first in the Design section and then add another action to the workflow -> Navigation -> Go to another Page
-    ![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(16).png?raw=true)
+Because we are using the users data, we need to create the sign-up page to get data from users.
+Create a new page and click on componenets, then choose the sign-up page and drag it into the page.
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(13).png?raw=true)
+You can be creative as you want for the UI.
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(1).png?raw=true)
+Click on `Workflow` tab, then `Add a new event` then choose the event "When page is loaded"
+Click on the event to add a new action, choose `ElementActions` and then `Toggle` and choose as element `Popup Sign Up/Log in` so the page is loaded for the vistors.
+Click in the Sign up bottom and click Add Workflow, then click on Add an action -> Account -> Sign the user Up 
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(14).png?raw=true)
+Then fill fields with the following: 
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(15).png?raw=true)
+The next step of the workflow is to naviagte the user to another page, create a page new page first in the Design section and then add another action to the workflow -> Navigation -> Go to another Page
+![Alt text](https://github.com/KaoutharBousbaa1/AIProjects/blob/main/WorkbookAI/Screenshot%20(16).png?raw=true)
     
 5- Upload PDFs page:
     Go to the design section of the new page and drag to the page the File Uploader element (You can be creative as you want here too ;) )
