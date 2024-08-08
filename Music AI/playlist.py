@@ -19,15 +19,15 @@ def combine_audio(clips, output_file):
 if __name__ == "__main__":
     # List of audio clips with absolute paths
     audio_clips = [
-        r'C:\Users\dell\OneDrive\Bureau\Project3\WhispersintheForest.mp3',
-        r'C:\Users\dell\OneDrive\Bureau\Project3\ForestCanvas.mp3',
-        r'C:\Users\dell\OneDrive\Bureau\Project3\ChasingtheDawn.mp3',
-        r'C:\Users\dell\OneDrive\Bureau\Project3\RiseandShine.mp3'
+        r'C:\Users\dell\OneDrive\Bureau\Project3\WhispersintheForest.mp3', #Please replace with your current path
+        r'C:\Users\dell\OneDrive\Bureau\Project3\ForestCanvas.mp3', #Please replace with your current path
+        r'C:\Users\dell\OneDrive\Bureau\Project3\ChasingtheDawn.mp3', #Please replace with your current path
+        r'C:\Users\dell\OneDrive\Bureau\Project3\RiseandShine.mp3' #Please replace with your current path
 
     ]
 
     # Output playlist file with absolute path
-    output_playlist = r'C:\Users\dell\OneDrive\Bureau\Project3\playlist.mp3'
+    output_playlist = r'C:\Users\dell\OneDrive\Bureau\Project3\playlist.mp3' #Please replace with your current path
 
     # Combine audio files into a playlist
     combine_audio(audio_clips, output_playlist)
