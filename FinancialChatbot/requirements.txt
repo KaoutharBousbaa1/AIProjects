@@ -1,6 +1,6 @@
 flask
 langchain
-langchain-commmunity
+langchain-community
 huggingface_hub
 faiss-cpu
 faiss-gpu
