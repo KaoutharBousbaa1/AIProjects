@@ -15,11 +15,11 @@ def transcribe_audio(audio_file):
 
 # Example usage
 audio_files = [
-    r'C:\Users\dell\OneDrive\Bureau\Project3\WhispersintheForest.mp3',
-    r'C:\Users\dell\OneDrive\Bureau\Project3\ForestCanvas.mp3',
-    r'C:\Users\dell\OneDrive\Bureau\Project3\ChasingtheDawn.mp3',
-    r'C:\Users\dell\OneDrive\Bureau\Project3\RiseandShine.mp3'
-]
+    r'C:\Users\dell\OneDrive\Bureau\Project3\WhispersintheForest.mp3', #Please replace with your current path
+    r'C:\Users\dell\OneDrive\Bureau\Project3\ForestCanvas.mp3', #Please replace with your current path
+    r'C:\Users\dell\OneDrive\Bureau\Project3\ChasingtheDawn.mp3', #Please replace with your current path
+    r'C:\Users\dell\OneDrive\Bureau\Project3\RiseandShine.mp3' #Please replace with your current path
+] 
 
 lyrics_list = [transcribe_audio(audio) for audio in audio_files]
 
@@ -39,7 +39,7 @@ def generate_image(prompt, image_path):
 # Example usage
 for i, lyrics in enumerate(lyrics_list):
     prompt = lyrics  # Using the lyrics as the prompt
-    image_path = f'C:\\Users\\dell\\OneDrive\\Bureau\\Project3\\image_{i + 1}.png'
+    image_path = f'C:\\Users\\dell\\OneDrive\\Bureau\\Project3\\image_{i + 1}.png' #Please replace with your current path
     generate_image(prompt, image_path)
 
 def create_video_with_audio(audio_file, image_files, output_file):
@@ -54,14 +54,14 @@ def create_video_with_audio(audio_file, image_files, output_file):
     video.write_videofile(output_file, fps=24)
 
 # Example usage
-audio_file = r'C:\Users\dell\OneDrive\Bureau\Project3\playlist.mp3'
+audio_file = r'C:\Users\dell\OneDrive\Bureau\Project3\playlist.mp3' #Please replace with your current path
 image_files = [
-    r'C:\Users\dell\OneDrive\Bureau\Project3\image_1.png',
-    r'C:\Users\dell\OneDrive\Bureau\Project3\image_2.png',
-    r'C:\Users\dell\OneDrive\Bureau\Project3\image_3.png',
-    r'C:\Users\dell\OneDrive\Bureau\Project3\image_4.png'
-]
-output_file = r'C:\Users\dell\OneDrive\Bureau\Project3\output_video.mp4'
+    r'C:\Users\dell\OneDrive\Bureau\Project3\image_1.png', #Please replace with your current path
+    r'C:\Users\dell\OneDrive\Bureau\Project3\image_2.png', #Please replace with your current path
+    r'C:\Users\dell\OneDrive\Bureau\Project3\image_3.png', #Please replace with your current path
+    r'C:\Users\dell\OneDrive\Bureau\Project3\image_4.png' #Please replace with your current path
+] 
+output_file = r'C:\Users\dell\OneDrive\Bureau\Project3\output_video.mp4' #Please replace with your current path
 
 create_video_with_audio(audio_file, image_files, output_file)
 
