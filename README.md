@@ -212,7 +212,7 @@ To run the project:
 
 * Generate AI music via the Udio platform. You can sign up [here](https://www.udio.com/).
 * Open the terminal and navigate to the project folder.
-* Download FFmpeg from [here]([https://www.udio.com/](https://github.com/BtbN/FFmpeg-Builds/releases)).
+* Download FFmpeg from [here](https://github.com/BtbN/FFmpeg-Builds/releases/).
 * Add the bin directory inside the extracted FFmpeg folder to your system's PATH environment variable.
 * Run the following commands:
      ```sh
